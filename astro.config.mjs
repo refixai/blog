@@ -30,6 +30,6 @@ export default defineConfig({
 		sitemap(),
 		tailwind()
 	],
-	base: 'blog',
+	base: '/blog',
 	trailingSlash: 'always'
 })
