@@ -6,7 +6,7 @@ import { remarkReadingTime } from './src/utils/readTime.ts'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://blog.refix.ai/',
+	site: 'https://refix.ai/',
 	markdown: {
 		remarkPlugins: [remarkReadingTime],
 		drafts: true,
@@ -21,8 +21,8 @@ export default defineConfig({
 			shikiConfig: {
 				experimentalThemes: {
 					light: 'vitesse-light',
-					dark: 'material-theme-palenight',
-				  },
+					dark: 'material-theme-palenight'
+				},
 				wrap: true
 			},
 			drafts: true
@@ -30,6 +30,5 @@ export default defineConfig({
 		sitemap(),
 		tailwind()
 	],
-	base: '/blog/',
-	trailingSlash: 'always'
+	trailingSlash: 'ignore'
 })
