@@ -22,12 +22,11 @@
 5. [Stack](#-Stack)
 6. [Running locally](#-Running-Locally)
 7. [Configure](#-Configure)
-8. [Categories](#-Adding-a-category)
-9. [Posts](#-Adding-a-post)
-10. [Draft](#-Activating-draft-mode)
-11. [FrontMatter](#-Frontmatter)
-12. [CLI](#-Commands)
-13. [Contributors](#-Contributors)
+8. [Posts](#-Adding-a-post)
+9. [Draft](#-Activating-draft-mode)
+10. [FrontMatter](#-Frontmatter)
+11. [CLI](#-Commands)
+12. [Contributors](#-Contributors)
 
 ## 💻 Demo
 
@@ -136,22 +135,6 @@ pnpm dev
   - open-graph -> the open-graph is the image that will be displayed when sharing the blog link. For posts, the preview image is the post cover.
 - Edit the social networks in the Header component - **src/components/Header.astro**, change the URL to your social network.
 
-## 🗂️ Adding a category
-
-To add a new category to your blog, simply go to the src/data/categories.ts file and add it to the array.
-
-Example:
-
-```ts
-export  const  CATEGORIES  =  [
-'JavaScript',
-'React',
-'new category here'  <---
-]  as  const
-```
-
-> 🚨 Zod checks whether the category is not correctly written or does not exist in the properties of the markdown document. **It will throw an error when building the application.** 🚨
-
 ## 📄 Adding a post
 
 Adding a post is as simple as adding a .md or .mdx file to the blog folder at the path **src/content/blog**. The filename will be used to create the slug/URL of the page.
@@ -169,7 +152,6 @@ title: MacBook Pro 2022
 description: 'The new MacBook Pro 2022 is here. With the Apple M2 chip, a new design, and more, the new MacBook Pro is the best laptop Apple has ever made.'
 pubDate: 'Jul 02 2022'
 heroImage: '../../assets/bg.jpg'
-category: 'Category 1'
 tags: ['JavaScript', 'css', 'HTML5', 'GitHub']
 draft: true <---
 ```
@@ -182,7 +164,6 @@ draft: true <---
 - Description
 - pubDate
 - heroImage (post cover)
-- category (Choose a category from src/data/categories.ts)
 
 ## Optional properties:
 
