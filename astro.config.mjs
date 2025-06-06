@@ -6,7 +6,7 @@ import { remarkReadingTime } from './src/utils/readTime.ts'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://refix.ai/blog',
+	site: 'https://blog.refix.ai', // Replace with your actual domain
 	base: '/blog',
 	trailingSlash: 'always',
 	markdown: {
