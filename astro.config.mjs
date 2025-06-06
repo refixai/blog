@@ -6,8 +6,8 @@ import { remarkReadingTime } from './src/utils/readTime.ts'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://blog-template-gray.vercel.app/', // Replace with your actual domain
-	base: '/blog',
+	site: 'https://blog.refix.ai', // Updated to match your actual domain
+	// Removed base since you're using a subdomain, not a subpath
 	trailingSlash: 'always',
 	markdown: {
 		remarkPlugins: [remarkReadingTime],
