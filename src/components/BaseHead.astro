@@ -1,7 +1,7 @@
 ---
 import { siteConfig } from '@/site-config'
 import '../styles/global.css'
-import { ViewTransitions } from 'astro:transitions'
+import { ClientRouter } from 'astro:transitions'
 
 export interface Props {
 	title: string
@@ -37,8 +37,8 @@ import { AstroFont } from 'astro-font'
 <!-- Primary Meta Tags -->
 <title>{siteTitle}</title>
 
-<!-- ViewTransitions  -->
-<ViewTransitions />
+<!-- ClientRouter  -->
+<ClientRouter />
 
 <!-- SEO -->
 <meta name='title' content={siteTitle} />
@@ -68,6 +68,7 @@ import { AstroFont } from 'astro-font'
 <meta property='twitter:url' content={Astro.url} />
 <meta property='twitter:title' content={title} />
 <meta property='twitter:description' content={description} />
+<!-- TODO: add twitter image -->. this is old
 <meta
 	property='twitter:image'
 	content={socialImageURL || 'https://framerusercontent.com/images/R6iZUvNndKCcSPBDiw3hBUgFI.png'}
