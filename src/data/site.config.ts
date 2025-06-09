@@ -10,8 +10,9 @@ interface SiteConfig {
 
 export const siteConfig: SiteConfig = {
 	author: 'Refix AI', // Site author
-	title: 'Refix AI', // Site title.
-	description: 'Refix AI is a analytics platform for your business.', // Description to display in the meta tags
+	title: 'Refix AI - Product Analytics', // Site title.
+	description:
+		'Effortless Product Analytics. Track every interaction on your webpage with a single line of code.', // Description to display in the meta tags
 	lang: 'en-GB',
 	ogLocale: 'en_GB',
 	shareMessage: 'Share this post', // Message to share a post on social media
