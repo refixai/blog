@@ -7,9 +7,7 @@ import { remarkReadingTime } from './src/utils/readTime.ts'
 
 // https://astro.build/config
 export default defineConfig({
-	adapter: netlify({
-		imageCDN: false,
-	}),
+	adapter: netlify(),
 	
 	site: 'https://blog.refix.ai', // Replace with your actual domain
 	base: '/blog',
