@@ -18,7 +18,7 @@ const { posts, FirstBig = false } = Astro.props
 	)}
 >
 	{
-		posts.map(async (post) => {
+		posts.map(async (post, index) => {
 			const { remarkPluginFrontmatter } = await post.render()
 
 			return (
@@ -27,6 +27,7 @@ const { posts, FirstBig = false } = Astro.props
 					data={post.data}
 					slug={post.slug}
 					readTime={remarkPluginFrontmatter.minutesRead}
+					index={index}
 				/>
 			)
 		})
