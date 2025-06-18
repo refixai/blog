@@ -1,45 +1,3 @@
-## 📌 Table Of Contents
-
-1. [Demo](#-Demo)
-2. [CMS](#-Tina-CMS)
-3. [Features](#-Features)
-4. [Roadmap](#-Roadmap)
-5. [Stack](#-Stack)
-6. [Running locally](#-Running-Locally)
-7. [Configure](#-Configure)
-8. [Posts](#-Adding-a-post)
-9. [Draft](#-Activating-draft-mode)
-10. [FrontMatter](#-Frontmatter)
-11. [CLI](#-Commands)
-12. [Contributors](#-Contributors)
-
-## 🦙 Tina CMS
-
-By default, this template comes pre-configured with Tina CMS.
-
-Now you can create your posts directly from the CMS without the need to do it manually.
-
-If you decide to use Tina, it's not necessary to add any properties to the Markdown files, Tina does it automatically.
-
-Example:
-
-https://github.com/danielcgilibert/blog-template/assets/44746462/51ae324c-d383-40be-9b16-db159d1af15d
-
-The documentation for Tina CMS can be found [here](https://tina.io/docs/)
-
-> Tina is completely optional, and you can remove it, and it will still function in the same way.
-
-## ⚙️ Stack
-
-- [**ASTRO** + **Typescript**](https://astro.build/) - Astro is the all-in-one web framework designed for speed.
-- [**Tailwind CSS** + **Tailwind-Merge** + **clsx**](https://tailwindcss.com/) - Tailwind CSS is a utility-first CSS framework.
-- [**Tabler Icons**](https://tabler-icons.io/i/) - A open source SVG icons.
-- [**Eslint**](https://eslint.org/) - ESLint is an open source project that helps you find and fix problems.
-- [**Prettier**](https://prettier.io/) - Code formatter.
-- [**Search Library**](https://pagefind.app/) - Static search library integration.
-- [**Motion**](https://motion.dev/) - Motion One is the smallest fully-featured animation library for the web.
-- [**Tina CMS**](https://tina.io/) - CMS.
-
 ## 👨🏻‍💻 Running Locally
 
 **Recommended extensions for VSCode:**
@@ -58,6 +16,33 @@ pnpm install
 ```bash
 pnpm dev
 ```
+
+Blog is at http://localhost:4321/blog
+
+Tina CMS - http://localhost:4321/blog/admin/index.html
+
+Blog MDX files - src/content/blog
+
+## 🦙 Tina CMS
+
+By default, this template comes pre-configured with Tina CMS.
+
+Now you can create your posts directly from the CMS without the need to do it manually.
+
+If you decide to use Tina, it's not necessary to add any properties to the Markdown files, Tina does it automatically.
+
+The documentation for Tina CMS can be found [here](https://tina.io/docs/)
+
+## ⚙️ Stack
+
+- [**ASTRO** + **Typescript**](https://astro.build/) - Astro is the all-in-one web framework designed for speed.
+- [**Tailwind CSS** + **Tailwind-Merge** + **clsx**](https://tailwindcss.com/) - Tailwind CSS is a utility-first CSS framework.
+- [**Tabler Icons**](https://tabler-icons.io/i/) - A open source SVG icons.
+- [**Eslint**](https://eslint.org/) - ESLint is an open source project that helps you find and fix problems.
+- [**Prettier**](https://prettier.io/) - Code formatter.
+- [**Search Library**](https://pagefind.app/) - Static search library integration.
+- [**Motion**](https://motion.dev/) - Motion One is the smallest fully-featured animation library for the web.
+- [**Tina CMS**](https://tina.io/) - CMS.
 
 ## 📐 Configure
 
@@ -114,7 +99,7 @@ All commands are run from the root of the project, from a terminal:
 | Command                 | Action                                                                                                                           |
 | :---------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | `pnpm install`          | Installs dependencies                                                                                                            |
-| `pnpm run dev`          | Starts local dev server at `localhost:3000`                                                                                      |
+| `pnpm run dev`          | Starts local dev server at `localhost:4321`                                                                                      |
 | `pnpm run build`        | Build your production site to `./dist/`                                                                                          |
 | `pnpm run preview`      | Preview your build locally, before deploying                                                                                     |
 | `pnpm run format:check` | Check code format with Prettier                                                                                                  |
