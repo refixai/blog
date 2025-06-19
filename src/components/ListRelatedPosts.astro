@@ -30,7 +30,7 @@ const { posts } = Astro.props
 						<header class='flex justify-center items-center'>
 							<a
 								class='font-medium  hover:underline'
-								href={`${import.meta.env.BASE_URL}post/${post.slug}/`}
+								href={`${import.meta.env.BASE_URL}${post.slug}/`}
 							>
 								{post.data.title}
 							</a>

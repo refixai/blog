@@ -13,7 +13,7 @@ const {
 ---
 
 <article class='grid grid-rows-[300px_auto] md:grid-rows-[300px_220px] min-h-full group'>
-	<a class='relative overflow-hidden' href={`${import.meta.env.BASE_URL}post/${slug}/`}>
+	<a class='relative overflow-hidden' href={`${import.meta.env.BASE_URL}${slug}/`}>
 		<Image
 			src={heroImage}
 			width={600}
@@ -40,7 +40,7 @@ const {
 			<div class='flex flex-col gap-2'>
 				<a
 					class='text-2xl font-semibold -tracking-wider'
-					href={`${import.meta.env.BASE_URL}post/${slug}/`}
+					href={`${import.meta.env.BASE_URL}${slug}/`}
 				>
 					{title}
 				</a>
@@ -55,7 +55,7 @@ const {
 
 		<footer class='flex justify-between items-center'>
 			<a
-				href={`${import.meta.env.BASE_URL}post/${slug}/`}
+				href={`${import.meta.env.BASE_URL}${slug}/`}
 				class='flex justify-center items-center dark:text-white rounded-full hover:translate-x-1 transition-transform duration-150 ease-in-out font-semibold gap-1 group'
 				aria-label={`go to ${title}`}
 			>
